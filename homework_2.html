@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Таблица и форма</title>
+</head>
+<body>
+<h1>Большая таблица лекарственных растений</h1>
+<table border="2px">
+	<caption>Основные факторы воздействия растений на слизистые оболочки</caption>
+	<thead>
+		<tr>
+			<td rowspan="3"> Тип воздействия </td>
+			<td colspan="2"> Растение </td>
+			<td colspan="7"> Влияние на железистый аппарат</td>
+		</tr>
+		<tr>
+			<td rowspan="2"> Название </td>
+			<td rowspan="2"> Используемая часть </td>
+			<td colspan="5"> Желудочно-кишечный тракт </td>
+			<td rowspan="2"> Мочевые пути</td>
+			<td rowspan="2"> Бронхи </td>
+		</tr>
+		<tr>
+			<td> Желудок </td>
+			<td> Поджелудочная железа </td>
+			<td> Желчные пути </td>
+			<td> Тонкий кишечник </td>
+			<td> Толстый кишечник </td>
+		</tr>
+	</thead>
+		</tr>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td> Сокогонный </td>
+			<td> Береза </td>
+			<td> по </td>
+			<td> ++ </td>
+			<td> ++ </td>
+			<td> ++ </td>
+			<td> + </td>
+			<td></td>
+			<td> ++ </td>
+			<td> ++ </td>
+		</tr>
+		<tr>
+			<td> Сокогонный </td>
+			<td> Вишня </td>
+			<td> пл </td>
+			<td> ++ </td>
+			<td> + </td>
+			<td> + </td>
+			<td> + </td>
+			<td> ++ </td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Сокогонный</td>
+			<td>Женшень</td>
+			<td>ке</td>
+			<td>++</td>
+			<td>++</td>
+			<td>+++</td>
+			<td>+</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Вяжущий</td>
+			<td>Земляника</td>
+			<td>ли</td>
+			<td>+</td>
+			<td></td>
+			<td>+</td>
+			<td>++</td>
+			<td>+</td>
+			<td>++</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Слизеобразующий</td>
+			<td>Лен</td>
+			<td>се</td>
+			<td>+++</td>
+			<td>+</td>
+			<td>+</td>
+			<td>+++</td>
+			<td>+++</td>
+			<td>++</td>
+			<td>++</td>
+		</tr>
+	<tfoot>
+		<tr>
+			<td colspan="10">Примечание: ке - корень, пл - плоды, ли - лист, се - семена, по - почки</td>
+		</tr>
+	</tfoot>	
+</table>
+
+<form action="/form.html">
+	<fieldset>
+		<h2>Вход</h2><br>
+		<label>Login<input type="text" name="login"></label>
+		<label>Password<input type="password" name="password"></label>
+		<button>Log in</button>
+	</fieldset>
+	<fieldset>	
+		<h2>Регистрация</h2>
+		<label>Придумайте логин<input type="text" name="login"></label>
+		<p><label>Придумайте пароль<input type="password" name="password"></label></p>
+		<p><label>Введите свой e-mail<input type="e-mail" name="e-mail"></label></p>
+		<p><label>Введите Ваш номер телефона<input type="tel" name="tel"></label></p>
+		<p><label>Выберите пол</label></p>
+		<label>муж<input type="radio" name="radio" checked="checked"></label>
+		<label>жен<input type="radio" name="radio"></label>
+		<p><label>Введите Ваш возраст<input type="number" name="number"></label></p>
+		<p><label>Загрузите Вашу фотографию<input type="file" name="file"></label></p>
+		<input type="reset" name="reset"> <br>
+		<label>Согласен с условиями лицензионного соглашения<input type="checkbox" name="checkbox"></label> <br> 
+		<input type="submit" name="submit"> <br>
+	</fieldset>
+	<fieldset>
+		<label>Поиск по сайту:<input type="search" name="search"></label> <br>
+		<label>Поиск по полученной ссылке:<input type="url" name="url"></label> <br>
+		<label>Поставьте оценку сайту<select name="select" size="1">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		<option>6</option>
+		<option>7</option>
+		<option>8</option>
+		<option>9</option>
+		<option>10</option></select></label>
+		<button>Оценить</button>
+		<p><label>Оцените работу нашего сервиса<input type="range" name="range" min="1" max="10" step="1"></label></p>
+		<button>Оценить</button>
+	</fieldset>
+</form>
+</body>
+</html>
